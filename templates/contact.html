@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hope Foundation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Hope Foundation</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/causes">Causes</a></li>
+                <li><a href="/donate">Donate</a></li>
+                <li><a href="/contact" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactFirstName">First Name *</label>
+                                <input type="text" id="contactFirstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactLastName">Last Name *</label>
+                                <input type="text" id="contactLastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactEmail">Email *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactPhone">Phone Number</label>
+                            <input type="tel" id="contactPhone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="partnership">Partnership/Sponsorship</option>
+                                <option value="donation">Donation Questions</option>
+                                <option value="media">Media/Press</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter">
+                                <span>Subscribe to our newsletter</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-container">
+                    <div class="contact-info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>info@hopefoundation.org</p>
+                                <p>press@hopefoundation.org</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>Main: +1 (555) 123-4567</p>
+                                <p>Toll-Free: 1-800-HOPE-NOW</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Address</h4>
+                                <p>Hope Foundation</p>
+                                <p>123 Charity Lane</p>
+                                <p>City, State 12345</p>
+                                <p>United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">🕐</div>
+                            <div class="contact-details">
+                                <h4>Office Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media-card">
+                        <h3>Connect With Us</h3>
+                        <div class="social-buttons">
+                            <a href="#" class="social-btn facebook">Facebook</a>
+                            <a href="#" class="social-btn twitter">Twitter</a>
+                            <a href="#" class="social-btn instagram">Instagram</a>
+                            <a href="#" class="social-btn linkedin">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <div class="quick-links-card">
+                        <h3>Quick Actions</h3>
+                        <a href="/donate" class="action-link">Make a Donation</a>
+                        <a href="/causes" class="action-link">View Our Causes</a>
+                        <a href="/about" class="action-link">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How can I volunteer?</h4>
+                    <p>We welcome volunteers! Please send us a message using the form above with the subject "Volunteer Opportunities" and tell us about your skills and interests.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Are donations tax-deductible?</h4>
+                    <p>Yes, Hope Foundation is a registered 501(c)(3) nonprofit organization. All donations are tax-deductible to the extent allowed by law.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you use donations?</h4>
+                    <p>90% of all donations go directly to our programs. The remaining 10% covers essential administrative and fundraising costs.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I visit your projects?</h4>
+                    <p>We organize volunteer trips and site visits periodically. Contact us to learn about upcoming opportunities.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you accept corporate partnerships?</h4>
+                    <p>Absolutely! We work with corporations for sponsorships, matching gifts, and employee volunteer programs. Contact us to discuss partnership opportunities.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I stay updated?</h4>
+                    <p>Subscribe to our newsletter to receive regular updates about our work, impact stories, and upcoming events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="contactSuccessModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Message Sent!</h2>
+            <p>Thank you for reaching out to us. We've received your message and will get back to you within 24-48 hours.</p>
+            <button class="btn btn-primary" onclick="closeContactModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Hope Foundation</h3>
+                    <p>Working together to create a better tomorrow for communities in need.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/causes">Our Causes</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@hopefoundation.org</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Charity Lane, City, State</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

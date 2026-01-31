@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Causes - Hope Foundation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Hope Foundation</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/causes" class="active">Causes</a></li>
+                <li><a href="/donate">Donate</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Causes</h1>
+            <p>Support the programs making real impact in communities worldwide</p>
+        </div>
+    </section>
+
+    <!-- Causes List -->
+    <section class="causes-section">
+        <div class="container">
+            <div class="causes-grid">
+                <!-- Cause 1 -->
+                <div class="cause-card featured">
+                    <div class="cause-icon">📚</div>
+                    <h3>Education for All</h3>
+                    <p>Providing quality education and learning resources to underprivileged children in remote areas. We build schools, provide supplies, and train teachers to ensure every child has access to learning opportunities.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 5,000+ students enrolled
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 20 communities
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$75,000 raised</span>
+                        <span>75% of $100,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+
+                <!-- Cause 2 -->
+                <div class="cause-card">
+                    <div class="cause-icon">🏥</div>
+                    <h3>Healthcare Access</h3>
+                    <p>Bringing medical care and health services to remote communities through mobile clinics, health camps, and building permanent healthcare facilities with trained medical staff.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 8,000+ patients treated
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 15 regions
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 60%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$45,000 raised</span>
+                        <span>60% of $75,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+
+                <!-- Cause 3 -->
+                <div class="cause-card">
+                    <div class="cause-icon">💧</div>
+                    <h3>Clean Water Initiative</h3>
+                    <p>Building wells and water purification systems to provide clean, safe drinking water to communities that lack access to this basic necessity. Preventing waterborne diseases and improving health outcomes.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 25 wells constructed
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 12 villages
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$42,500 raised</span>
+                        <span>85% of $50,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+
+                <!-- Cause 4 -->
+                <div class="cause-card">
+                    <div class="cause-icon">🍲</div>
+                    <h3>Food Security Program</h3>
+                    <p>Combating hunger through food distribution, nutrition education, and sustainable farming initiatives. We provide meals to children and families while teaching agricultural skills for long-term food security.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 3,000+ families fed
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 18 communities
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$24,000 raised</span>
+                        <span>40% of $60,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+
+                <!-- Cause 5 -->
+                <div class="cause-card">
+                    <div class="cause-icon">💼</div>
+                    <h3>Skills & Employment</h3>
+                    <p>Empowering individuals through vocational training, entrepreneurship programs, and job placement services. We help people build sustainable livelihoods and break the cycle of poverty.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 1,200+ trained
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 10 training centers
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 55%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$27,500 raised</span>
+                        <span>55% of $50,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+
+                <!-- Cause 6 -->
+                <div class="cause-card">
+                    <div class="cause-icon">👧</div>
+                    <h3>Women & Children</h3>
+                    <p>Supporting vulnerable women and children through protection programs, counseling services, and empowerment initiatives. Creating safe spaces and opportunities for growth and development.</p>
+                    <div class="cause-details">
+                        <div class="detail-item">
+                            <strong>Impact:</strong> 2,500+ beneficiaries
+                        </div>
+                        <div class="detail-item">
+                            <strong>Location:</strong> 8 centers
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                    <div class="cause-stats">
+                        <span>$35,000 raised</span>
+                        <span>70% of $50,000</span>
+                    </div>
+                    <a href="/donate" class="btn btn-primary">Support This Cause</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Collective Impact</h2>
+                <p>Here's what your support has helped us achieve</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-item">
+                    <div class="impact-number">15,000+</div>
+                    <div class="impact-label">Lives Touched</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">50+</div>
+                    <div class="impact-label">Communities</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">100+</div>
+                    <div class="impact-label">Projects</div>
+                </div>
+                <div class="impact-item">
+                    <div class="impact-number">$500K+</div>
+                    <div class="impact-label">Funds Raised</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Every Contribution Counts</h2>
+                <p>Choose a cause that speaks to your heart and make a difference today</p>
+                <a href="/donate" class="btn btn-large">Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Hope Foundation</h3>
+                    <p>Working together to create a better tomorrow for communities in need.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/causes">Our Causes</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@hopefoundation.org</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Charity Lane, City, State</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

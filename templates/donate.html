@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Hope Foundation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Hope Foundation</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/causes">Causes</a></li>
+                <li><a href="/donate" class="active">Donate</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Make a Donation</h1>
+            <p>Your generosity transforms lives and builds stronger communities</p>
+        </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section class="donate-section">
+        <div class="container">
+            <div class="donate-layout">
+                <!-- Donation Form -->
+                <div class="donate-form-container">
+                    <h2>Choose Your Impact</h2>
+                    
+                    <form id="donationForm" class="donation-form">
+                        <!-- Amount Selection -->
+                        <div class="form-group">
+                            <label>Select Amount</label>
+                            <div class="amount-buttons">
+                                <button type="button" class="amount-btn" data-amount="25">$25</button>
+                                <button type="button" class="amount-btn" data-amount="50">$50</button>
+                                <button type="button" class="amount-btn" data-amount="100">$100</button>
+                                <button type="button" class="amount-btn" data-amount="250">$250</button>
+                                <button type="button" class="amount-btn" data-amount="500">$500</button>
+                                <button type="button" class="amount-btn active" data-amount="custom">Custom</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customAmount">Custom Amount ($)</label>
+                            <input type="number" id="customAmount" name="amount" min="1" value="100" required>
+                        </div>
+
+                        <!-- Donation Type -->
+                        <div class="form-group">
+                            <label>Donation Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="donationType" value="one-time" checked>
+                                    <span>One-time</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="donationType" value="monthly">
+                                    <span>Monthly</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Cause Selection -->
+                        <div class="form-group">
+                            <label for="cause">Select Cause</label>
+                            <select id="cause" name="cause" required>
+                                <option value="">Where it's needed most</option>
+                                <option value="education">Education for All</option>
+                                <option value="healthcare">Healthcare Access</option>
+                                <option value="water">Clean Water Initiative</option>
+                                <option value="food">Food Security Program</option>
+                                <option value="skills">Skills & Employment</option>
+                                <option value="women">Women & Children</option>
+                            </select>
+                        </div>
+
+                        <!-- Personal Information -->
+                        <h3>Your Information</h3>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <!-- Payment Information -->
+                        <h3>Payment Details</h3>
+                        <p class="form-note">This is a demo form. No actual payment will be processed.</p>
+
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number *</label>
+                            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="expiry">Expiry Date *</label>
+                                <input type="text" id="expiry" name="expiry" placeholder="MM/YY" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV *</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="123" maxlength="3" required>
+                            </div>
+                        </div>
+
+                        <!-- Additional Options -->
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="anonymous">
+                                <span>Make this donation anonymous</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="newsletter" checked>
+                                <span>Send me updates about Hope Foundation's work</span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-primary btn-block">Complete Donation</button>
+
+                        <p class="security-note">🔒 Your donation is secure and tax-deductible</p>
+                    </form>
+                </div>
+
+                <!-- Donation Info Sidebar -->
+                <div class="donate-sidebar">
+                    <div class="donation-impact">
+                        <h3>Your Impact</h3>
+                        <div class="impact-list">
+                            <div class="impact-item-small">
+                                <strong>$25</strong>
+                                <p>Provides school supplies for 5 children</p>
+                            </div>
+                            <div class="impact-item-small">
+                                <strong>$50</strong>
+                                <p>Delivers clean water for a family for 6 months</p>
+                            </div>
+                            <div class="impact-item-small">
+                                <strong>$100</strong>
+                                <p>Funds medical care for 10 patients</p>
+                            </div>
+                            <div class="impact-item-small">
+                                <strong>$250</strong>
+                                <p>Supports vocational training for 3 individuals</p>
+                            </div>
+                            <div class="impact-item-small">
+                                <strong>$500</strong>
+                                <p>Builds a water well for a small community</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="donation-trust">
+                        <h3>Why Donate?</h3>
+                        <ul class="trust-list">
+                            <li>✓ 90% of funds go directly to programs</li>
+                            <li>✓ Tax-deductible donations</li>
+                            <li>✓ Transparent reporting</li>
+                            <li>✓ Regular impact updates</li>
+                            <li>✓ Secure payment processing</li>
+                        </ul>
+                    </div>
+
+                    <div class="other-ways">
+                        <h3>Other Ways to Give</h3>
+                        <p><strong>Bank Transfer:</strong><br>
+                        Account: 123456789<br>
+                        Routing: 987654321</p>
+                        
+                        <p><strong>Mail a Check:</strong><br>
+                        Hope Foundation<br>
+                        123 Charity Lane<br>
+                        City, State 12345</p>
+                        
+                        <p><strong>Corporate Matching:</strong><br>
+                        Check if your employer matches donations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h2>Thank You!</h2>
+            <p>Your generous donation has been received. You're making a real difference in people's lives.</p>
+            <p class="modal-detail">A confirmation email has been sent to your address.</p>
+            <button class="btn btn-primary" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Hope Foundation</h3>
+                    <p>Working together to create a better tomorrow for communities in need.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/causes">Our Causes</a></li>
+                        <li><a href="/donate">Donate</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@hopefoundation.org</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Charity Lane, City, State</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">Facebook</a>
+                        <a href="#" class="social-icon">Twitter</a>
+                        <a href="#" class="social-icon">Instagram</a>
+                        <a href="#" class="social-icon">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hope Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
